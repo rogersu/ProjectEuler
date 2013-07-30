@@ -9,7 +9,7 @@ public class TestProblem {
 	public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
 		
-		new P28().solve();
+		new P24().solve();
 		
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
