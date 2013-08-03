@@ -8,21 +8,11 @@ public class P10 {
 		long sum = 2;
 		
 		for (int i=3; i<=2000000; i++){
-			if (isPrime(i)){
+			if (PrimeUtils.isPrime(i)){
 				sum += i;
 				System.out.println(i + " " + sum);
 			}
 		}
 		System.out.println(sum);
-	}
-	
-	public static boolean isPrime(int n) {
-		if (n%2==0) return false;
-
-	    for(int i=3;i*i<=n;i+=2) {
-	        if(n%i==0)
-	            return false;
-	    }
-	    return true;
 	}
 }
